@@ -1,0 +1,47 @@
+<div class="row">
+  
+      <div class="col-xs-12 col-sm-6 dash-item text-center">
+      
+        <div class="row">
+          
+          <div class="col-xs-12 well">
+            <h4>Current Exhibits</h4>
+          </div>
+          
+        </div>
+        
+        <div class="row">
+          
+          <div class="col-xs-12" ng-repeat="exhibit in dash.exhibits">
+            <i ng-show="!exhibit.indoors" class="fa fa-tree" aria-hidden="true"></i>
+            <i ng-show="exhibit.indoors" class="fa fa-building-o" aria-hidden="true"></i>
+            <a ng-href="#/exhibits/{{exhibit._id}}">{{exhibit.name}}</a>
+          </div>
+          
+        </div>
+    
+      </div>
+    
+    <div class="col-xs-12 col-sm-6 dash-item text-center">
+      
+        <div class="row">
+          
+          <div class="col-xs-12 well">
+            <h4>Need Cleaning</h4>
+          </div>
+          
+        </div>
+        
+        <div class="row">
+          
+          <div class="col-xs-12" ng-repeat="exhibit in dash.exhibits | filter:dash.needCleaning">
+            <i ng-show="!exhibit.indoors" class="fa fa-tree" aria-hidden="true"></i>
+            <i ng-show="exhibit.indoors" class="fa fa-building-o" aria-hidden="true"></i>
+            {{exhibit.name}}
+          </div>
+          
+        </div>
+    
+      </div>
+    
+  </div>

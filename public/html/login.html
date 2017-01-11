@@ -1,0 +1,18 @@
+<form ng-submit="home.signup()">
+  Sign Up!
+  <input class="form-control" ng-model="home.signupUser.email" type="text" placeholder="Email">
+  <input class="form-control" ng-model="home.signupUser.pass" type="password" placeholder="Pass">
+  <input type="Submit" class="btn btn-info">
+<img ng-show="home.signupLoad" src="https://media.giphy.com/media/9kHVljc89cwwg/giphy.gif" alt="elephant seesaw">
+</form>
+
+<hr>
+
+<form ng-show="!home.loginLoad" ng-submit="home.login()">
+  Log In!
+  <input class="form-control" ng-model="home.loginUser.email" type="text" placeholder="Email">
+  <input class="form-control" ng-model="home.loginUser.pass" type="password" placeholder="Pass">
+  <input type="Submit" class="btn btn-info">
+  
+</form>
+<img ng-show="home.loginLoad" src="https://media.giphy.com/media/9kHVljc89cwwg/giphy.gif" alt="elephant seesaw">

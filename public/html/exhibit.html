@@ -1,0 +1,22 @@
+<form ng-submit="ex.updateExhibit()">
+  
+Name
+<input class="form-control" ng-model="ex.exhibit.name">
+
+Animals
+<input class="form-control" ng-model="ex.exhibit.animals" ng-list>
+
+Size
+<select class="form-control" ng-model="ex.exhibit.size">
+  <option ng-value="1">Small</option>
+  <option ng-value="2">Med</option>
+  <option ng-value="3">Large</option>
+  <option ng-value="4">XL</option>
+</select>
+  
+  Photo
+  <input type="file" ng-model="ex.exhibit.photo" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-select>
+  
+  
+  <input type="submit" class="btn btn-success" value="update!">
+</form>

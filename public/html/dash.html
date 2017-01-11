@@ -1,0 +1,10 @@
+<h3>Welcome back, {{dash.Auth.user.email}}!</h3>
+
+
+<div class="container">
+
+  <ng-include src="dash.Auth.user.role >= 2 ? '/html/dash-admin.html' : '/html/dash-peon.html'"></ng-include>
+
+</div>
+
+
