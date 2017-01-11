@@ -25,5 +25,14 @@
   - High-level module dealing with Amazon S3
   - will allow us to upload files to their server
   
+  
+```
+
+function(req, res){
+  res.send('stuff!')
+}
+
+```
+  
 
 
