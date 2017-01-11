@@ -26,7 +26,7 @@
   - will allow us to upload files to their server
   
   
-```
+```javascript
 
 function(req, res){
   res.send('stuff!')
